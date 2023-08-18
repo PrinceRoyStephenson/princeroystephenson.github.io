@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clickable Picture Gallery</title>
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .image-wrapper {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .image {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .image-wrapper:hover .overlay {
+      opacity: 1;
+    }
+
+    .overlay-content {
+      text-align: center;
+    }
+
+    .overlay-link {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      background-color: #337ab7;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <div class="image-wrapper">
+      <a href="https://example.com/link1" class="overlay-link" target="_blank">
+        <div class="image">
+          <img src="image1.jpg" alt="Image 1">
+        </div>
+        <div class="overlay">
+          <div class="overlay-content">
+            <p>Click to visit link 1</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="image-wrapper">
+      <a href="https://example.com/link2" class="overlay-link" target="_blank">
+        <div class="image">
+          <img src="image2.jpg" alt="Image 2">
+        </div>
+        <div class="overlay">
+          <div class="overlay-content">
+            <p>Click to visit link 2</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="image-wrapper">
+      <a href="https://example.com/link3" class="overlay-link" target="_blank">
+        <div class="image">
+          <img src="image3.jpg" alt="Image 3">
+        </div>
+        <div class="overlay">
+          <div class="overlay-content">
+            <p>Click to visit link 3</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!-- Add more image-wrapper elements for additional images and links -->
+  </div>
+</body>
+</html>
+This code creates a gallery with three images, and each image is wrapped inside an anchor (<a>) element with a link to an external website (https://example.com/link1, https://example.com/link2, https://example.com/link3). The images have an overlay with the link text that becomes visible when hovering over the image.
+
+You can add more image-wrapper elements to include additional images and links in the gallery. Just replace image1.jpg, image2.jpg, image3.jpg with the URLs of your desired images, and update the href attribute inside the anchor element with the respective link URLs.
+
+
+
+
+User
+Can you rewrite this with a gallery of 8 images? 
+ChatGPT
+Certainly! Here's the updated HTML code for a gallery with eight images, each with clickable links:
+
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clickable Picture Gallery</title>
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .image-wrapper {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .image {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .image-wrapper:hover .overlay {
+      opacity: 1;
+    }
+
+    .overlay-content {
+      text-align: center;
+    }
+
+    .overlay-link {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      background-color: #337ab7;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <div class="image-wrapper">
+      <a href="https://example.com/link1" class="overlay-link" target="_blank">
+        <div class="image">
+          <img src="images/20things in DUNE.jpg" alt="Image 1">
+        </div>
+        <div class="overlay">
+          <div class="overlay-content">
+            <p>Click to visit link 1</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="image-wrapper">
+      <a href="https://example.com/link2" class="overlay-link" target="_blank">
+        <div class="image">
+          <img src="image2.jpg" alt="Image 2">
+        </div>
+        <div class="overlay">
+          <div class="overlay-content">
+            <p>Click to visit link 2</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="image-wrapper">
+      <a href="https://example.com/link3" class="overlay-link" target="_blank">
+        <div class="image">
+          <img src="image3.jpg" alt="Image 3">
+        </div>
+        <div class="overlay">
+          <div class="overlay-content">
+            <p>Click to visit link 3</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="image-wrapper">
+      <a href="https://example.com/link4" class="overlay-link" target="_blank">
+        <div class="image">
+          <img src="image4.jpg" alt="Image 4">
+        </div>
+        <div class="overlay">
+          <div class="overlay-content">
+            <p>Click to visit link 4</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="image-wrapper">
+      <a href="https://example.com/link5" class="overlay-link" target="_blank">
+        <div class="image">
+          <img src="image5.jpg" alt="Image 5">
+        </div>
+        <div class="overlay">
+          <div class="overlay-content">
+            <p>Click to visit link 5</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="image-wrapper">
+      <a href="https://example.com/link6" class="overlay-link" target="_blank">
+        <div class="image">
+          <img src="image6.jpg" alt="Image 6">
+        </div>
+        <div class="overlay">
+          <div class="overlay-content">
+            <p>Click to visit link 6</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="image-wrapper">
+      <a href="https://example.com/link7" class="overlay-link" target="_blank">
+        <div class="image">
+          <img src="image7.jpg" alt="Image 7">
+        </div>
+        <div class="overlay">
+          <div class="overlay-content">
+            <p>Click to visit link 7</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="image-wrapper">
+      <a href="https://example.com/link8" class="overlay-link" target="_blank">
+        <div class="image">
+          <img src="image8.jpg" alt="Image 8">
+        </div>
+        <div class="overlay">
+          <div class="overlay-content">
+            <p>Click to visit link 8</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
